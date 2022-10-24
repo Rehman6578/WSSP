@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Labour_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:nestedScrollingEnabled="false"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/backround"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/arrow_left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/Garbage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alata"
+                android:text="Cleaning Garbage"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/clock"
+                android:fontFamily="@font/alata"
+                android:textSize="12dp"
+                android:text="9:00AM"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/Garbage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.67"
+                app:layout_constraintStart_toEndOf="@+id/Garbage" />
+
+            <ImageView
+                android:id="@+id/locatoinpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/white_loc_pin"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/Garbage" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Phase 05 Street No #3 \n Hayatabat Peshawar"
+                android:textColor="@color/white"
+                android:paddingStart="15dp"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/Garbage"
+                app:layout_constraintTop_toBottomOf="@+id/Garbage" />
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:backgroundTint="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="160dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp">
+
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/profile_image" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/profile_image"
+                            android:fontFamily="@font/alata"
+                            android:text="Fazal Khan"
+                            android:textColor="#E45E5C5C"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name"
+                            android:layout_alignStart="@+id/name"
+                            android:layout_alignEnd="@+id/name"
+                            android:fontFamily="@font/alata"
+                            android:text="Labour | 2433"
+                            android:textColor="#D1D8DF"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                        <ImageView
+                            android:id="@+id/tick"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:padding="4dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="45dp"
+                            android:layout_toEndOf="@+id/name"
+                            android:src="@drawable/tick" />
+
+                        <TextView
+                            android:id="@+id/attendence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tick"
+                            android:layout_alignBottom="@+id/tick"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/alata"
+                            android:text="Present"
+                            android:textAllCaps="false"
+                            android:textColor="#4CAF50"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/attendence"
+                            android:layout_alignStart="@+id/tick"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="-15dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableStart="@drawable/clock"
+                            android:fontFamily="@font/alata"
+                            android:text="11:00AM - 9/10/2022"
+                            android:textSize="08sp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/black"
+                            />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/user"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/black"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/user1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/user"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp">
+
+                        <ImageView
+                            android:id="@+id/profile_image1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/profile_image" />
+
+                        <TextView
+                            android:id="@+id/name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/profile_image1"
+                            android:fontFamily="@font/alata"
+                            android:text="Fazal Khan"
+                            android:textColor="#E45E5C5C"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name1"
+                            android:layout_alignStart="@+id/name1"
+                            android:layout_alignEnd="@+id/name1"
+                            android:fontFamily="@font/alata"
+                            android:text="Labour | 2433"
+                            android:textColor="#D1D8DF"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                        <ImageView
+                            android:id="@+id/tick1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:padding="4dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="45dp"
+                            android:layout_toEndOf="@+id/name1"
+                            android:src="@drawable/cross" />
+
+                        <TextView
+                            android:id="@+id/attendence1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tick1"
+                            android:layout_alignBottom="@+id/tick1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/alata"
+                            android:text="Absent"
+                            android:textAllCaps="false"
+                            android:textColor="#F44336"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/attendence1"
+                            android:layout_alignStart="@+id/tick1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="-15dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableStart="@drawable/clock"
+                            android:fontFamily="@font/alata"
+                            android:text="11:00AM - 9/10/2022"
+                            android:textSize="08sp" />
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/user1"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/black"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/user2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/user1"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp">
+
+                        <ImageView
+                            android:id="@+id/profile_image2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/profile_image" />
+
+                        <TextView
+                            android:id="@+id/name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/profile_image2"
+                            android:fontFamily="@font/alata"
+                            android:text="Fazal Khan"
+                            android:textColor="#E45E5C5C"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name2"
+                            android:layout_alignStart="@+id/name2"
+                            android:layout_alignEnd="@+id/name2"
+                            android:fontFamily="@font/alata"
+                            android:text="Labour | 2433"
+                            android:textColor="#D1D8DF"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                        <ImageView
+                            android:id="@+id/tick2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:padding="4dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="45dp"
+                            android:layout_toEndOf="@+id/name2"
+                            android:src="@drawable/tick" />
+
+                        <TextView
+                            android:id="@+id/attendence2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tick2"
+                            android:layout_alignBottom="@+id/tick2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/alata"
+                            android:text="Present"
+                            android:textAllCaps="false"
+                            android:textColor="#4CAF50"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/attendence2"
+                            android:layout_alignStart="@+id/tick2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="-15dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableStart="@drawable/clock"
+                            android:fontFamily="@font/alata"
+                            android:text="11:00AM - 9/10/2022"
+                            android:textSize="08sp" />
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/user2"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/black"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/user3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/user2"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp">
+
+                        <ImageView
+                            android:id="@+id/profile_image3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/profile_image" />
+
+                        <TextView
+                            android:id="@+id/name3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@+id/profile_image3"
+                            android:fontFamily="@font/alata"
+                            android:text="Fazal Khan"
+                            android:textColor="#E45E5C5C"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name3"
+                            android:layout_alignStart="@+id/name3"
+                            android:layout_alignEnd="@+id/name3"
+                            android:fontFamily="@font/alata"
+                            android:text="Labour | 2433"
+                            android:textColor="#D1D8DF"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                        <ImageView
+                            android:id="@+id/tick3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:padding="4dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="45dp"
+                            android:layout_toEndOf="@+id/name3"
+                            android:src="@drawable/cross" />
+
+                        <TextView
+                            android:id="@+id/attendence3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/tick3"
+                            android:layout_alignBottom="@+id/tick3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/alata"
+                            android:text="Absent"
+                            android:textAllCaps="false"
+                            android:textColor="#F44336"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/attendence3"
+                            android:layout_alignStart="@+id/tick3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="-15dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableStart="@drawable/clock"
+                            android:fontFamily="@font/alata"
+                            android:text="11:00AM - 9/10/2022"
+                            android:textSize="08sp" />
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/user2"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/black"
+                        />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
